@@ -7,18 +7,21 @@ import java.util.regex.*;
 public class Solution {
 
     public static void main(String[] args) {
-        Scanner sc=new Scanner (System.in);
-        float num1=sc.nextFloat();   
-        int b=sc.nextInt();
-        int c=sc.nextInt();
+         
+    Scanner sc = new Scanner(System.in);
+        double floatVal = sc.nextDouble(); 
+        int squareVal = sc.nextInt();     
+        int base = sc.nextInt();          
+        int power = sc.nextInt();         
+        int floor = (int)Math.floor(floatVal);
+        int ceil = (int)Math.ceil(floatVal);
+        int sqrt = (int)Math.sqrt(squareVal);
+        int pow = (int)Math.pow(base, power);
+        System.out.println(floor);
+        System.out.println(ceil);
+        System.out.println(sqrt);
+        System.out.println(pow);
         
-        int Floor=(int) Math.floor(num1); 
-        int Ceil=(int) Math.ceil(a);
-        int Sqrt=(int) Math.sqrt(b);
-        int Pow=(int) Math.pow(b,c);
-        System.out.println(Floor);
-        System.out.println(Ceil);
-        System.out.println(Sqrt);
-        System.out.println(Pow);
+
     }
 }
