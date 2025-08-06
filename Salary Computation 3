@@ -1,0 +1,27 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+     Scanner sc=new Scanner(System.in);
+     int sal=sc.nextInt();
+     float hra,da;
+        
+        if(sal<15000){
+            hra= 0.15f*sal; 
+            da=0.90f*sal;
+        }
+        else{
+            hra=15000;
+            da=0.98f*sal;
+            
+        }
+            float gs=sal+hra+da;
+
+       System.out.printf("%.2f",gs);
+    }
+}
