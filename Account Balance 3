@@ -1,0 +1,37 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+      Scanner sc=new Scanner(System.in);
+        int acc=sc.nextInt();
+        int ch1=sc.nextInt();
+        int sum;
+        int total;
+        switch (ch1)
+        {
+        case 1:
+            int dep=sc.nextInt();
+            sum=acc+dep;
+            System.out.println(sum);
+            break;
+        case 2:
+            int with=sc.nextInt();
+            if(with>acc){
+                System.out.println("Insufficient Balance");
+                
+            }else{
+                total=acc-with;
+                System.out.println(total);
+                
+            }
+            break;
+
+        default:
+                System.out.println("Invalid Input");
+
+            
+        }
+    }
+}
