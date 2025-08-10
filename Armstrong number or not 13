@@ -1,0 +1,32 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+         int num= sc.nextInt();
+        int sum = 0;
+        int temp = num;
+        if (num >= 100 && num <= 999) {
+            while (temp > 0) {
+                int digit = temp % 10;
+                sum += Math.pow(digit, 3);
+                temp /= 10;
+            }
+            if (sum == num) {
+                System.out.println("Yes");
+            } else {
+                System.out.println("No");
+            }
+        } else {
+            System.out.println("No");
+        }
+            
+        }
+        
+       
+}
