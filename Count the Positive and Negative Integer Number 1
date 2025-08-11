@@ -7,25 +7,27 @@ import java.util.regex.*;
 public class Solution {
 
     public static void main(String[] args) {
-      Scanner ch = new Scanner(System.in);
-        int n = ch.nextInt();
-
-        float countp = 0, countn = 0;
-        int[] a = new int[n];
-
-        for (int i = 0; i < n; i++) {
-            a[i] = ch.nextInt();
-        }
-
-        for (int i = 0; i < n; i++) {
-            if (a[i] > 0) {
-                countp++;
-            } else if (a[i] < 0) {
-                countn++;
+         Scanner sc=new Scanner (System.in);
+        int a=sc.nextInt();
+        int arr[]=new int[a];
+        float countpos=0;
+        float countneg=0;
+        for(int i=0;i<a;i++){
+            arr[i]=sc.nextInt();
+            
+            if(arr[i]>0){
+                
+                countpos++;
+            }else{
+                countneg++;
+                
             }
+                 
+                
+            }
+            System.out.printf("Count of Positive Integer is %.2f\n",countpos);
+            System.out.printf("Count of Negative Integer is %.2f\n",countneg);
+                
+            
         }
-
-        System.out.printf("Count of Positive Integer is %.2f\n", countp);
-        System.out.printf("Count of Negative Integer is %.2f\n", countn);
     }
-}
